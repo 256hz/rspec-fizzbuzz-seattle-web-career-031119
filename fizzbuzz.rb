@@ -2,14 +2,17 @@
 # See README.md for instructions on how to do this
 
 def fizzbuzz(number)
-  string = nil
+  string = ''
   
   if number % 3 == 0
     string = string + "Fizz"
+    if number % 5 == 0
+      string = string + "Buzz"
+    end
+  elsif number % 5 == 0
+    
   end
   
-  if number % 5 == 0
-    string = string + "Buzz"
   end
   
   string
