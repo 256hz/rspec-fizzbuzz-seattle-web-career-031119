@@ -5,15 +5,14 @@ def fizzbuzz(number)
   string = ''
   
   if number % 3 == 0
-    string = string + "Fizz"
+    string += "Fizz"
     if number % 5 == 0
-      string = string + "Buzz"
+      string += "Buzz"
     end
   elsif number % 5 == 0
-    
+    string += "Buzz"
+  else
+    string = nil
   end
-  
-  end
-  
   string
 end
