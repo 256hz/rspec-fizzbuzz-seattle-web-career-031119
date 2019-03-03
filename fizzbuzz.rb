@@ -3,9 +3,14 @@
 
 def fizzbuzz(number)
   string = ""
+  
   if number % 3 == 0
-    string += "Fizz"
+    string = string + "Fizz"
+  end
+  
   if number % 5 == 0
-    string += "Buzz"
+    string = string + "Buzz"
+  end
+  
   string
 end
